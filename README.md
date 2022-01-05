@@ -1,2 +1,2 @@
-# Hap2Dis
+# HapProj
 Haplotype Analysis Using Large GWAS Data
