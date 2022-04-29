@@ -1,0 +1,7 @@
+args <- commandArgs(trailingOnly = TRUE)
+library(SeqArray)
+fn.1=as.character(args[1])
+fn.2=as.character(args[2])
+nvar=as.numeric(args[3])
+ncore=as.numeric(args[4])
+seqVCF2GDS(fn.1, fn.2, parallel=ncore, count=nvar)
