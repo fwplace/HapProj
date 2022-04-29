@@ -1,2 +1,3 @@
 # HapProj
-Haplotype Analysis Using Large GWAS Data
+Genome-wide Analysis of Rare Haplotypes Associated with Breast Cancer Risk
+
