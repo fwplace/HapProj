@@ -19,7 +19,7 @@ Rscript functions/gds_splitSet.R [variant file] [w] [s] [type] [bsize] [jobsize]
 2. Test all haplotypes for each small chunk using Cox regression
 
 ```
-Rscript gdsCox_retro_wrap.R [phenfile] [setfile] [gdsdir] [outdir] [ncore]
+Rscript functions/gdsCox_retro_wrap.R [phenfile] [setfile] [gdsdir] [outdir] [ncore]
 ```
 
 * `phenfile` is a R Datafram contaning sample ids, disease status, age, and other covariates
@@ -31,7 +31,7 @@ Rscript gdsCox_retro_wrap.R [phenfile] [setfile] [gdsdir] [outdir] [ncore]
 3. Merge all result files into a single file
 
 ```
-Rscript gds.hap.sum.R [resPath] [outfn1] [outfn2]
+Rscript functions/gds.hap.sum.R [resPath] [outfn1] [outfn2]
 ```
 
 * `resPath` is the output directory returned in the step 2
