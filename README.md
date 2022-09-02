@@ -3,13 +3,17 @@
 This folder contains R functions and scripts used to conduct a genome-wide haplotype analysis using the UKBB GWAS data. 
 
 
-1. Split the genome into smaller chunks given a fixed window size `w` (e.g., `w=20 variants`) and skip length `s` (e.g., 's=1 varaint') 
+1. Split the genome into smaller chunks given a fixed window size `w` (e.g., `w=20 variants`) and skip length `s` (e.g., `s=1 varaint') 
  
-
 ```
-Rscript gds_splitSet.R [variant file] [w] [s] [type] [bsize] [jobsize] [oudir]
+Rscript gds_splitSet.R [variant file] [w] [s] [type] [bsize] [jobsize] [outdir]
 ```   
 
+* `variant file`, a text file containing two columns: chromosome and index of variant in the genotype GDS file
+* `w`, window size of sliding windows 
+* `s`, skip length
+* `bsize`, the number of windows analyzed in a batch
+* `jobsize`, the number of batches in a single job
+* `outdir`, outout directory
 
-
-2. Run haploty
+2. Run 
