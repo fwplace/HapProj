@@ -1,11 +1,15 @@
 # HapProj
 
-This folder contains R functions and scripts used to conduct genome-wide haplotype analysis.
+This folder contains R functions and scripts used to conduct a genome-wide haplotype analysis using the UKBB GWAS data. 
 
-##
 
-> Rscript gdsCox_retro_wrap2.R \
-> ~/hap/data/ukb.bca.hap.gds/ukb.bca.hap.chr${chrid}.gds \
->             50 1 hap 0.001 0.501 20 $ssdir/retrospective/hap.w50.s1.f001.caseOnly 500
-             
+1. Split the genome into smaller chunks given a fixed window size `w` (e.g., `w=20 variants`) and skip length 
+ 
 
+```
+Rscript gds_splitSet.R [variant file] [w] [s] [type] [bsize] [jobsize] [oudir]
+```   
+
+
+
+2. Run haploty
