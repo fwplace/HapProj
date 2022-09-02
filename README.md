@@ -6,7 +6,7 @@ This folder contains R functions and scripts used to conduct a genome-wide haplo
 1. Split the genome into smaller chunks given a fixed window size `w` (e.g., `w=20 variants`) and skip length `s` (e.g., `s=1 varaint`) 
  
 ```
-Rscript ./functions/gds_splitSet.R [variant file] [w] [s] [type] [bsize] [jobsize] [outdir]
+Rscript functions/gds_splitSet.R [variant file] [w] [s] [type] [bsize] [jobsize] [outdir]
 ```   
 
 * `variant file` is a R Dataframe containing two columns: chromosome and index of varaint in the genotype GDS file
